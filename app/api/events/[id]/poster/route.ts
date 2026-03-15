@@ -32,7 +32,8 @@ export async function POST(request: Request, { params }: RouteParams) {
         { status: 400 }
       );
     }
-
+    
+    const ext = file.name.split(".").pop() ?? "png";
     const key = `${POSTER_KEY_PREFIX}${eventId}`;
     const arrayBuffer = await file.arrayBuffer();
     const buffer = Buffer.from(arrayBuffer);
