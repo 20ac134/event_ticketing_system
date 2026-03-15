@@ -34,7 +34,8 @@ export async function POST(request: Request, { params }: RouteParams) {
     }
     
     const ext = file.name.split(".").pop() ?? "png";
-    const key = `${POSTER_KEY_PREFIX}${eventId}`;
+    const key = `${POSTER_KEY_PREFIX}${eventId}.${ext}`;
+    // const key = `${POSTER_KEY_PREFIX}${eventId}`;
     const arrayBuffer = await file.arrayBuffer();
     const buffer = Buffer.from(arrayBuffer);
     const contentType = file.type || "image/jpeg";
@@ -44,7 +45,9 @@ export async function POST(request: Request, { params }: RouteParams) {
     const posterUrl = `/api/events/${eventId}/poster`;
     await prisma.event.update({
       where: { id: eventId },
-      data: { posterFileKey: key, posterUrl },
+      data: { 
+        posterFileKey: key, 
+        posterUrl },
     });
 
     return NextResponse.json({ posterUrl });
