@@ -464,3 +464,11 @@ AI sometimes produced incorrect or incomplete API logic, which required manual c
 Through this project, we gained valuable experience in full-stack application architecture, secure authentication and authorization, real-time data handling using Server-Sent Events (SSE), cloud storage integration, and deployment with debugging in a production environment. One major challenge we encountered was coordinating frontend and backend interactions, particularly for real-time updates and ensuring secure authentication across different user roles. 
 
 In summary, this project demonstrates a scalable and practical event ticketing system while reinforcing key software engineering concepts and best practices.
+
+## Video Demo
+
+### Key features in action and user flow through the application
+https://drive.google.com/file/d/15o84d7iI4J4p_fkEJumfJ4xz9PAaAD13/view?usp=sharing
+
+### Check-in process on deployed systems
+https://drive.google.com/file/d/11BXR5T9Kd_3Vi50oSzTdtfAmfWZDModl/view?usp=sharing
