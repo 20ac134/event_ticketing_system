@@ -458,6 +458,7 @@ AI sometimes produced incorrect or incomplete API logic, which required manual c
 | **Alvin Chang** | Real-time attendance (SSE) and check-in flow; QR code ticket generation and staff check-in UI; testing and debugging; event and ticket type logic across frontend and API. |
 
 As each group member maintains their own GitHub repository for deployment on Vercel, this final version was used to avoid confusion between different versions, so the commit history does not accurately reflect individual contributions.
+
 ---
 
 ## 11. Lessons Learned and Conclusion
